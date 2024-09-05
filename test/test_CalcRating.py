@@ -45,4 +45,4 @@ class TestCalcRating:
             rating_score = rating[student]
             if (rating_score != 0):
                 assert pytest.approx(rating_score,
-                                    abs=0.001) == input_data[1][student]
+                                     abs=0.001) == input_data[1][student]
