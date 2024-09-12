@@ -9,10 +9,10 @@ class TestTextDataReader:
     @pytest.fixture()
     def file_and_data_content(self) -> tuple[str, DataType]:
         text = "<root>\n<student>\n<name>Иванов Иван Иванович</name>\n" + \
-            "<math>100</math>\n<programming>100</programming>\n<literature>" + \
-            "100</literature>\n</student>\n<student>\n<name>Петров Петр Петр" + \
-            "ович</name>\n<math>100</math>\n<sociology>90</sociology>\n<chemi" + \
-            "stry>61</chemistry>\n</student>\n</root>\n"
+            "<math>100</math>\n<programming>100</programming>\n<litera" + \
+            "ture>100</literature>\n</student>\n<student>\n<name>Петро" + \
+            "в Петр Петрович</name>\n<math>100</math>\n<sociology>90</" + \
+            "sociology>\n<chemistry>61</chemistry>\n</student>\n</root>\n"
         data = {
             "Иванов Иван Иванович": [
                 ("math", 100), ("programming", 100), ("literature", 100)
